@@ -88,7 +88,7 @@ const TerminalTab: React.FC = () => {
           <Paper
             elevation={1}
             className="sidebar lowercase xs:hidden"
-            sx={{ width: { xs: 22, md: 150, sm: 100 }, bgcolor: "#333" }}
+            sx={{ width: { xs: 0, md: 150, sm: 100 }, bgcolor: "#333" }}
           >
             <List className="lowercase xs:hidden">
               {[
@@ -164,26 +164,34 @@ const TerminalTab: React.FC = () => {
           >
             Terminal
           </Typography>
-          <Box sx={{ height: "70px", overflowY: "auto" }}>
-            gobind@ubuntu:~
-            {terminalOutput.map((line, index) => (
-              <Typography key={index} variant="body2" sx={{ color: "#D4D4D4" }}>
-                {line}
-              </Typography>
-            ))}
-          </Box>
+          <Typography
+            variant="subtitle1"
+            className="terminal-header flex"
+            sx={{ color: "#00FF00" }}
+          >
+            gobind@ubuntu:~$
+          
           <TextField
             fullWidth
+            className="flex justify-center items-center"
             variant="standard"
             InputProps={{
               disableUnderline: true,
-              sx: { color: "#00FF00", fontFamily: "monospace" },
+              sx: { paddingLeft: "12px", color: "#fff", fontFamily: "monospace" },
             }}
             value={terminalInput}
             onChange={(e) => setTerminalInput(e.target.value)}
             onKeyDown={handleCommand}
-            placeholder="Type a command..."
-          />
+            placeholder=" Type a command..."
+            />
+            </Typography>
+            <Box sx={{ height: "70px", overflowY: "auto" }}>
+              {terminalOutput.map((line, index) => (
+                <Typography key={index} variant="body2" sx={{ color: "#D4D4D4" }}>
+                  {line}
+                </Typography>
+              ))}
+            </Box>
         </Paper>
       </Paper>
     </Box>
