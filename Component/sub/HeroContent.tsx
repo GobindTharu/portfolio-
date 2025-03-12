@@ -26,8 +26,8 @@ const HeroContent = () => {
             className="welcome-box w-[220px] sm:w-[260px] md:w-[300px] py-[6px] sm:py-[8px] px-[4px] border rounded-xl border-[#7042f88b] opacity-[0.9] mx-auto md:mx-0"
           >
             <span className="flex items-center justify-start">
-              <SparklesIcon className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 mr-2 sm:mr-3 text-[#b494ff]" />
-              <h1 className="Welcome-text text-[12px] sm:text-[14px] md:text-[16px]">
+              <SparklesIcon className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 mr-2 sm:mr-3  text-[#b494ff]" />
+              <h1 className="Welcome-text text-[12px] sm:text-[14px] md:text-[16px] text-center sm:text-center">
                 FullStack Developer Portfolio
               </h1>
             </span>
@@ -45,7 +45,7 @@ const HeroContent = () => {
 
           <motion.div
             variants={slideInFromLeft(0.5)}
-            className="flex flex-col gap-6 mt-3 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
+            className="flex flex-col gap-6 mt-3 text-6xl font-bold text-white max-w-[600px] sm:max-w-[200px] w-auto h-auto"
           >
             <span>
               Providing
@@ -64,7 +64,7 @@ const HeroContent = () => {
               I&apos;m
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                 {" "}
-                BalGobind{" "}
+                Balgobind Chaudhary{" "}
               </span>
             </span>
           </motion.div>

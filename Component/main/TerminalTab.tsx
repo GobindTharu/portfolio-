@@ -43,7 +43,7 @@ const TerminalTab: React.FC = () => {
         display: "flex",
         flexDirection: "column",
         height: "auto",
-        width: "600",
+        width: "auto",
         bgcolor: "#1E1E1E",
         color: "#D4D4D4",
       }}
@@ -56,7 +56,7 @@ const TerminalTab: React.FC = () => {
           display: "flex",
           flexDirection: "column",
           bgcolor: "#252526",
-          width: "100%",
+          width: "auto",
         }}
       >
         {/* Title Bar */}
@@ -87,10 +87,10 @@ const TerminalTab: React.FC = () => {
           {/* Sidebar */}
           <Paper
             elevation={1}
-            className="sidebar lowercase"
-            sx={{ width: { xs: 100, md: 150 }, bgcolor: "#333" }}
+            className="sidebar lowercase xs:hidden"
+            sx={{ width: { xs: 22, md: 150, sm: 100 }, bgcolor: "#333" }}
           >
-            <List className="lowercase">
+            <List className="lowercase xs:hidden">
               {[
                 "File",
                 "Search",
@@ -143,7 +143,7 @@ const TerminalTab: React.FC = () => {
               <Editor
                 height="50vh"
                 theme="vs-dark"
-                defaultLanguage="typescript"
+                defaultLanguage="javascript"
                 value={code}
                 onChange={(value) => setCode(value || "")}
               />
@@ -168,10 +168,9 @@ const TerminalTab: React.FC = () => {
             gobind@ubuntu:~
             {terminalOutput.map((line, index) => (
               <Typography key={index} variant="body2" sx={{ color: "#D4D4D4" }}>
-              {line}
+                {line}
               </Typography>
             ))}
-          
           </Box>
           <TextField
             fullWidth
