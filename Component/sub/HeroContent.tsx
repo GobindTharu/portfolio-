@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { motion } from "framer-motion";
 import {
   slideInFromLeft,
@@ -11,9 +11,8 @@ import TerminalTab from "../main/TerminalTab";
 
 const HeroContent = () => {
   return (
-    <div className="relative w-full">
+    <div className="relative w-full flex flex-end">
       {/* Hero Section */}
-      <div className="flex flex-col justify-between items-center "></div>
       <motion.div
         initial="hidden"
         animate="visible"
@@ -89,7 +88,7 @@ const HeroContent = () => {
 
         <motion.div
           variants={slideInFromRight(0.2)}
-          className="flex sm:flex-col items-center justify-center mt-6 sm:mt-8 md:mt-0 w-auto max-w-[180px] sm:max-w-[20px] md:max-w- lg:max-w-lg"
+          className="flex sm:flex-col items-center justify-center lg:m-0, mt-6 sm:mt-8 md:mt-0 w-auto max-w-[180px] sm:max-w-[20px] md:max-w-md lg:max-w-lg"
         >
           <TerminalTab />
         </motion.div>
