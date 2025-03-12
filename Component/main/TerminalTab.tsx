@@ -87,11 +87,11 @@ const TerminalTab: React.FC = () => {
           {/* Sidebar */}
           <Paper
             elevation={1}
-            className="sidebar lowercase xs:hidden"
+            className="sidebar lowercase overflow-hidden"
             sx={{ width: { xs: 0, md: 150, sm: 100 }, bgcolor: "#333" }}
           >
-            <List className="lowercase xs:hidden">
-              {[
+            <List className="lowercase">
+              {["",
                 "File",
                 "Search",
                 "Source Control",
