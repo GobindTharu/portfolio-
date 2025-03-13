@@ -7,7 +7,7 @@ import {
 } from "@/Utils/motion";
 import { SparklesIcon } from "@heroicons/react/16/solid";
 import Button from "./Button";
-import TerminalTab from "../main/TerminalTab";
+import TerminalTab from "./TerminalTab";
 
 const HeroContent = () => {
   return (
@@ -84,6 +84,7 @@ const HeroContent = () => {
             <Button />
           </motion.div>
         </div>
+
         {/* Right Section - Image */}
 
         <motion.div
