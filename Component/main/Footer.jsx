@@ -11,7 +11,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] ">
+    <div className="relative w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] ">
       <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
         <div className="font-bold text-[16px]">About</div>
         <p className="flex flex-row items-center my-[15px] cursor-pointer">
@@ -56,6 +56,12 @@ const Footer = () => {
             className=" flex justify-center  border rounded-full items-center gap-12 m-[2px] p-[12px] text-[15px] text-center"
           >
             <RxDiscordLogo />
+          </a>
+          <a
+            href="#"
+            className=" flex justify-center  border rounded-full items-center gap-12 m-[2px] p-[12px] text-[15px] text-center"
+          >
+            <FaYoutube/>
           </a>
         </div>
 
