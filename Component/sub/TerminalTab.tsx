@@ -50,7 +50,7 @@ const TerminalTab: React.FC = () => {
     >
       <Paper
         elevation={3}
-        className="vscode-container"
+        className="vscode-container m-2"
         sx={{
           flex: 1,
           display: "flex",

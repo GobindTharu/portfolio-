@@ -11,12 +11,12 @@ import TerminalTab from "./TerminalTab";
 
 const HeroContent = () => {
   return (
-    <div className="relative w-full flex flex-end">
+    <div className="relative w-full flex flex-end px-30">
       {/* Hero Section */}
       <motion.div
         initial="hidden"
         animate="visible"
-        className="flex flex-col md:flex-row items-center justify-start px-2 sm:px-6 md:px-12 lg:px-20 mt-16 sm:mt-20 md:mt-32 lg:mt-40 w-full z-[20] gap-18 sm:gap-10 md:gap-20 lg:gap-32"
+        className="flex flex-col  md:flex-row items-center justify-start px-20 sm:px-6 md:px-12 lg:px-20 mt-16 sm:mt-20 md:mt-32 lg:mt-40 w-full z-[20] gap-18 sm:gap-10 md:gap-20 lg:gap-100"
       >
         {/* Left Section */}
         <div className="flex flex-col  justify-center gap-4 sm:gap-5 text-center md:text-left max-w-lg">
@@ -26,7 +26,7 @@ const HeroContent = () => {
           >
             <span className="flex items-center justify-start">
               <SparklesIcon className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 mr-2 sm:mr-3  text-[#b494ff]" />
-              <h1 className="Welcome-text text-[12px] sm:text-[14px] md:text-[16px] text-center sm:text-center">
+              <h1 className="Welcome-text text-[12px] sm:text-[14px] md:text-[16px] xs:text-[333px] text-center sm:text-center">
                 FullStack Developer Portfolio
               </h1>
             </span>

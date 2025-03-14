@@ -1,9 +1,9 @@
 "use client";
 
-import { Socials } from "@/Constants/constants";
 import Image from "next/image";
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import SearchComponent from "./Search";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,20 +43,7 @@ const Navbar = () => {
             Contact
           </a>
         </div>
-
-        {/* Social Icons */}
-        <div className="hidden md:flex flex-row gap-4">
-          {Socials.map((social) => (
-            <Image
-              src={social.src}
-              alt={social.name}
-              key={social.name}
-              width={24}
-              height={24}
-              className="cursor-pointer hover:scale-110 transition-transform"
-            />
-          ))}
-        </div>
+          <SearchComponent/>
 
         {/* Mobile Menu Toggle */}
         <button
@@ -69,7 +56,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden absolute top-[65px] right-0 w-[50]  h-[100vh] bg-[#030014] backdrop-blur-md shadow-md flex flex-col items-center py-12 space-y-4 text-gray-200 text-sm font-medium ">
+        <div className="lg:hidden absolute top-[65px] right-0 w-[100vw]  h-[100vh] bg-[#030014] backdrop-blur-md shadow-md flex flex-col items-center py-12 space-y-4 text-gray-200 text-sm font-medium ">
           <a
             href="#about-me"
             className="flex flex-col items-center w-100 cursor-pointer uppercase  py-4 hover:tracking-widest hover:bg-[#878788]"
