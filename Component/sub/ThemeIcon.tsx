@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Bell, Moon, Sun, Settings } from "lucide-react";
 
-const NavbarIcons: React.FC = () => {
+const NavbarIcons = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   return (

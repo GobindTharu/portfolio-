@@ -5,10 +5,10 @@ import { Box } from 'lucide-react';
 
 const Card = () => {
   return (
-    <div className='flex flex-wrap m-auto gap-16 mt-20 '>
+    <div className='flex flex-wrap  xs:flex-col  m-auto xs:m-2 gap-16 mt-20 '>
     <Card1/>
     <Card1/>
-    <Card1/>
+    <Card1/>   
     <Card1/>
     <Card1/>
     <Card1/>
