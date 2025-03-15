@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import Card1 from "@/Component/sub/Card1";
-import { Box } from 'lucide-react';
 
 const Card = () => {
   return (

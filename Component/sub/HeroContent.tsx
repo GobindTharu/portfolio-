@@ -7,22 +7,22 @@ import {
 } from "@/Utils/motion";
 import { SparklesIcon } from "@heroicons/react/16/solid";
 import Button from "./Button";
-import TerminalTab from "./TerminalTab";
+import { HeroCard } from "./HeroCard";
 
 const HeroContent = () => {
   return (
-    <div className="relative w-full flex flex-end px-30">
+    <div className="relative w-full ">
       {/* Hero Section */}
       <motion.div
         initial="hidden"
         animate="visible"
-        className="flex flex-col  md:flex-row items-center justify-start px-20 sm:px-6 md:px-12 lg:px-20 mt-16 sm:mt-20 md:mt-32 lg:mt-40 w-full z-[20] gap-18 sm:gap-10 md:gap-20 lg:gap-100"
+        className=" flex flex-col  md:flex-row items-center justify-start mt-22 sm:mt-7 md:mt-12 lg:mt-12 w-full z-[20] gap-6 sm:gap-3 md:gap-5 lg:gap-10"
       >
         {/* Left Section */}
-        <div className="flex flex-col  justify-center gap-4 sm:gap-5 text-center md:text-left max-w-lg">
+        <div className="flex flex-col ml-2 sm:ml-0 md:ml-0 lg:ml-32 justify-center gap-2 sm:gap-5 md:gap-4 text-center md:text-left w-full">
           <motion.div
             variants={slideInFromTop(2.5)}
-            className="welcome-box w-[220px] sm:w-[260px] md:w-[300px] py-[6px] sm:py-[8px] px-[4px] border rounded-xl border-[#7042f88b] opacity-[0.9] mx-auto md:mx-0"
+            className="welcome-box w-[200px] sm:w-[260px] md:w-[300px] py-[6px] sm:py-[8px] px-[4px] border rounded-xl border-[#7042f88b] opacity-[0.9] mx-auto md:mx-0"
           >
             <span className="flex items-center justify-start">
               <SparklesIcon className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7 mr-2 sm:mr-3  text-[#b494ff]" />
@@ -44,7 +44,7 @@ const HeroContent = () => {
 
           <motion.div
             variants={slideInFromLeft(3.5)}
-            className="flex flex-col gap-6 mt-3 text-6xl font-bold text-white max-w-[600px] sm:max-w-[200px] w-auto h-auto"
+            className="flex flex-col gap-6 mt-3 text-6xl font-bold text-white max-w-[700px] sm:max-w-[600px] w-auto h-auto"
           >
             <span>
               Providing
@@ -77,10 +77,7 @@ const HeroContent = () => {
           </motion.p>
 
           {/* Button */}
-          <motion.div
-            variants={slideInFromLeft(5)}
-            className="mx-auto md:mx-0"
-          >
+          <motion.div variants={slideInFromLeft(5)} className="mx-auto md:mx-0">
             <Button />
           </motion.div>
         </div>
@@ -89,9 +86,9 @@ const HeroContent = () => {
 
         <motion.div
           variants={slideInFromRight(5.6)}
-          className="flex sm:flex-col items-center justify-center lg:m-0, mt-6 sm:mt-8 md:mt-0 w-auto max-w-[180px] sm:max-w-[20px] md:max-w-md lg:max-w-lg"
+          className="relative flex top-0 flex-col sm:flex-row items-center justify-center w-full p-4 sm:p-6 lg:p-8"
         >
-          <TerminalTab />
+          <HeroCard />
         </motion.div>
       </motion.div>
     </div>
