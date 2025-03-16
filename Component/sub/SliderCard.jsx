@@ -15,7 +15,7 @@ export const SliderCard = () => {
   };
 
   return (
-    <div className="z-50 w-full overflow-x-auto whitespace-nowrap">
+    <div className="z-20 w-full overflow-x-auto whitespace-nowrap">
       <div className="flex items-center space-x-6 px-4 my-20">
         {Testimonials?.map((item, index) => (
           <div key={index} className="flex-none w-[80vw] md:w-[50vw]">
