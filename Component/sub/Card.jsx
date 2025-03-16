@@ -2,6 +2,7 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 import { styled } from "@mui/system";
+import { Testimonials } from "@/Constants/constants";
 
 const CardContainer = styled(Box)({
   position: "relative",
@@ -51,34 +52,35 @@ const StyledButton = styled(Button)({
   },
 });
 
-const Card1 = () => {
+const Card = () => {
   return (
-    <Box className="flex justify-center items center m-auto">
-      <CardContainer>
-        <Content>
-          <Typography
-            variant="h1"
-            sx={{
-              fontSize: "2.5rem",
-              fontFamily: "Courier New, Courier, monospace",
-            }}
-          >
-            Title
-          </Typography>
-          <Typography
-            variant="body1"
-            sx={{ lineHeight: "22px", padding: "20px 0", margin: "20px 0" }}
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A rerum qui
-            ad accusantium molestias, reiciendis ducimus quisquam corporis
-            beatae aliquam, ullam nam iste minima. Animi sed voluptatibus
-            tempore numquam modi.
-          </Typography>
-          <StyledButton href="#">Read more</StyledButton>
-        </Content>
-      </CardContainer>
-    </Box>
+    <div className="flex flex-wrap  xs:flex-col  m-auto xs:m-2 gap-16 mt-20 rounded-full">
+      {Testimonials.map((item, index) => (
+        <Box className="flex justify-center items center m-auto rounded-full">
+          <CardContainer>
+            <Content>
+              <Typography
+                variant="h1"
+                sx={{
+                  fontSize: "2.5rem",
+                  fontFamily: "Courier New, Courier, monospace",
+                }}
+              >
+                {item?.name}
+              </Typography>
+              <Typography
+                variant="body1"
+                sx={{ lineHeight: "22px", padding: "20px 0", margin: "20px 0" }}
+              >
+                {item?.description}
+              </Typography>
+              <StyledButton href="#">Read more</StyledButton>
+            </Content>
+          </CardContainer>
+        </Box>
+      ))}
+    </div>
   );
 };
 
-export default Card1;
+export default Card;

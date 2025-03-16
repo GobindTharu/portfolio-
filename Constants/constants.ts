@@ -249,6 +249,20 @@ export const Other_skill = [
 ];
 export const Testimonials = [
   {
+    name: "React",
+    Image: "/react.png",
+    description: "Do not be a coder be programer with latest and popular tech",
+    width: 40,
+    height: 40,
+  },
+  {
+    name: "Tailwind Css",
+    description: "Do not be a coder be programer with latest and popular tech",
+    Image: "/tailwind.png",
+    width: 40,
+    height: 40,
+  },
+  {
     name: "Html 5",
     Image: "/html.png",
     description: "Do not be a coder be programer with latest and popular tech",
@@ -268,20 +282,6 @@ export const Testimonials = [
     description: "Do not be a coder be programer with latest and popular tech",
     width: 50,
     height: 50,
-  },
-  {
-    name: "Tailwind Css",
-    description: "Do not be a coder be programer with latest and popular tech",
-    Image: "/tailwind.png",
-    width: 40,
-    height: 40,
-  },
-  {
-    name: "React",
-    Image: "/react.png",
-    description: "Do not be a coder be programer with latest and popular tech",
-    width: 40,
-    height: 40,
   },
   {
     description: "Do not be a coder be programer with latest and popular tech",

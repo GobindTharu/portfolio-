@@ -7,7 +7,7 @@ import { slideInFromTop } from "@/Utils/motion";
 const Encryption = () => {
   return (
     <div className="flex flex-col lg:flex-row relative items-center justify-center min-h-screen w-full h-full sm:p-3 md:p-5 overflow-hidden">
-      <div className="absolute w-auto h-auto top-4 md:top-6 z-[5] px-4 text-center">
+      <div className="absolute w-auto h-auto top-7 md:top-12 z-[5] px-4 text-center">
         <motion.div
           variants={slideInFromTop(0.2)}
           className="text-[28px] sm:text-[32px] md:text-[32px] lg:text-[40px] font-medium text-gray-200"
@@ -45,7 +45,7 @@ const Encryption = () => {
         </div>
       </div>
 
-      <div className="absolute z-[20] bottom-4 sm:bottom-6 px-[4px] text-center">
+      <div className="absolute z-[20] bottom-14 sm:bottom-6 px-[4px] text-center">
         <div className="cursive text-[16px] sm:text-[18px] md:text-[20px] font-medium text-gray-300">
           Secure your data with end-to-end encryption
         </div>
