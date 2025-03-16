@@ -7,7 +7,7 @@ import { SliderCard } from "@/Component/sub/SliderCard";
 
 export default function Home() {
   return (
-    <main className="h-full w-full">
+    <main className="h-full w-auto overflow-x-hidden">
       <div className="flex flex-col">
         <Hero />
         <Encryption />
