@@ -242,8 +242,67 @@ export const Other_skill = [
   {
     skill_name: "Go",
     Image: "/go.png",
+    discriptions: "Do not be a coder be programer with latest and popular tech",
     width: 60,
     height: 60,
+  },
+];
+export const Testimonials = [
+  {
+    name: "Node js",
+    description: "Do not be a coder be programer with latest and popular tech",
+    Image: "/node-js.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    name: "Express js",
+    description: "Do not be a coder be programer with latest and popular tech",
+    Image: "/express.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    name: "Mongo db",
+    description: "Do not be a coder be programer with latest and popular tech",
+    Image: "/mongodb.png",
+    width: 40,
+    height: 40,
+  },
+  {
+    name: "Fire base",
+    description: "Do not be a coder be programer with latest and popular tech",
+    Image: "/Firebase.png",
+    width: 55,
+    height: 55,
+  },
+  {
+    name: "PostgerSQL",
+    description: "Do not be a coder be programer with latest and popular tech",
+    Image: "/postger.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    name: "My SQL",
+    description: "Do not be a coder be programer with latest and popular tech",
+    Image: "/mysql.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    name: "Prisma",
+    description: "Do not be a coder be programer with latest and popular tech",
+    Image: "/prisma.webp",
+    width: 70,
+    height: 70,
+  },
+  {
+    name: "Graphql",
+    description: "Do not be a coder be programer with latest and popular tech",
+    Image: "/graphql.png",
+    width: 80,
+    height: 80,
   },
 ];
 
