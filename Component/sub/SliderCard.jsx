@@ -10,7 +10,7 @@ export const SliderCard = () => {
   return (
     <>
       <h1 className="flex flex-1 justify-center items-center text-gray-200  text-2xl font-bold  md:text-4xl lg:text-6xl uppercase py-4 sm:py-4 lg:py- mt-16 sm:mt-1 lg:mt-6">
-        Skills
+      Testimonials
       </h1>
       <div className="z-20 w-full overflow-x-auto whitespace-nowrap">
         <div className="flex items-center space-x-6 px-4 my-20">
@@ -42,6 +42,7 @@ export const SliderCard = () => {
                       <Button
                         variant="outlined"
                         type={"large"}
+                      
                         className="bg-blue-500 text-white text-xs md:text-sm px-4 py-1.5 rounded-lg"
                       >
                         Learn More

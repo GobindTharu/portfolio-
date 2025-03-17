@@ -77,7 +77,6 @@ export const Skill_data = [
     width: 40,
     height: 40,
   },
-
 ];
 
 export const Socials = [
@@ -90,8 +89,6 @@ export const Socials = [
     src: "/discord.svg",
   },
 ];
-
-
 
 export const Frontend_skill = [
   {
@@ -233,10 +230,7 @@ export const Full_stack = [
     width: 50,
     height: 50,
   },
-
 ];
-
-
 
 export const Other_skill = [
   {
@@ -249,141 +243,38 @@ export const Other_skill = [
 ];
 export const Testimonials = [
   {
-    name: "React",
-    Image: "/react.png",
+    name: "Arun Neupane",
+    Image: "/arun.jpg",
     description: "Do not be a coder be programer with latest and popular tech",
     width: 40,
     height: 40,
   },
   {
-    name: "Tailwind Css",
+    name: "Pramod Tharu",
     description: "Do not be a coder be programer with latest and popular tech",
-    Image: "/tailwind.png",
+    Image: "/prampod.jpg",
     width: 40,
     height: 40,
   },
   {
-    name: "Html 5",
-    Image: "/html.png",
-    description: "Do not be a coder be programer with latest and popular tech",
-    width: 40,
-    height: 40,
-  },
-  {
-    name: "Css",
-    Image: "/css.png",
+    name: "Sabin Chaudhary",
+    Image: "/sabin.jpg",
     description: "Do not be a coder be programer with latest and popular tech",
     width: 40,
     height: 40,
   },
   {
-    name: "Java Script",
-    Image: "/js.png",
+    name: "Amrit Tharu",
+    Image: "/Amrit.jpg",
     description: "Do not be a coder be programer with latest and popular tech",
-    width: 50,
-    height: 50,
-  },
-  {
-    description: "Do not be a coder be programer with latest and popular tech",
-    name: "Redux",
-    Image: "/redux.png",
     width: 40,
     height: 40,
   },
   {
-    name: "React Query",
+    name: "Sunil Tharu",
+    Image: "/Sunil.jpg",
     description: "Do not be a coder be programer with latest and popular tech",
-    Image: "/reactquery.png",
-    width: 40,
-    height: 40,
-  },
-  {
-    name: "Type Script",
-    Image: "/ts.png",
-    width: 40,
-    height: 40,
-    description: "Do not be a coder be programer with latest and popular tech",
-  },
-  {
-    name: "Next js 13",
-    description: "Do not be a coder be programer with latest and popular tech",
-    Image: "/next.png",
-    width: 40,
-    height: 40,
-  },
-  {
-    name: "Node js",
-    description: "Do not be a coder be programer with latest and popular tech",
-    Image: "/node-js.png",
-    width: 40,
-    height: 40,
-  },
-  {
-    name: "Express js",
-    description: "Do not be a coder be programer with latest and popular tech",
-    Image: "/express.png",
-    width: 40,
-    height: 40,
-  },
-  {
-    name: "Mongo db",
-    description: "Do not be a coder be programer with latest and popular tech",
-    Image: "/mongodb.png",
-    width: 40,
-    height: 40,
-  },
-  {
-    name: "Fire base",
-    description: "Do not be a coder be programer with latest and popular tech",
-    Image: "/Firebase.png",
-    width: 55,
-    height: 55,
-  },
-  {
-    name: "PostgerSQL",
-    description: "Do not be a coder be programer with latest and popular tech",
-    Image: "/postger.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    name: "My SQL",
-    description: "Do not be a coder be programer with latest and popular tech",
-    Image: "/mysql.png",
-    width: 40,
-    height: 40,
-  },
-  {
-    name: "Prisma",
-    description: "Do not be a coder be programer with latest and popular tech",
-    Image: "/prisma.webp",
-    width: 40,
-    height: 40,
-  },
-  {
-    name: "Graphql",
-    description: "Do not be a coder be programer with latest and popular tech",
-    Image: "/graphql.png",
-    width: 40,
-    height: 40,
-  },
-
-  {
-    name: "Framer Motion",
-    description: "Do not be a coder be programer with latest and popular tech",
-    Image: "/framer.png",
-    width: 50,
-    height: 50,
-  },
-  {
-    name: "Stripe Payment",
-    description: "Do not be a coder be programer with latest and popular tech",
-    Image: "/stripe.webp",
     width: 50,
     height: 50,
   },
 ];
-
-
-
-

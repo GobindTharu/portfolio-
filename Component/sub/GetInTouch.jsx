@@ -32,7 +32,7 @@ const GetInTouch = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full min-h-screen p-2 bg-opacity-0 z-20 text-white">
       <h1 className="text-3xl font-semibold text-center mb-6">Get in Touch</h1>
-      <div className="flex flex-col lg:flex-row items-center justify-center w-full max-w-6xl gap-10 pr-4 bg-gray-800 rounded-lg shadow-lg">
+      <div className="flex flex-col lg:flex-row items-center justify-center w-full max-w-6xl gap-10 p-3 bg-gray-800 rounded-lg shadow-lg">
         {/* Google Map */}
         <div className="w-full lg:w-1/2 h-96 lg:h-[500px] rounded-lg overflow-hidden p-0">
           <iframe
@@ -47,7 +47,7 @@ const GetInTouch = () => {
         {/* Contact Form */}
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="w-full lg:w-1/2 flex flex-col gap-4"
+          className="w-full lg:w-1/2 flex flex-col gap-4 p-16"
         >
           <div className="flex items-center gap-2">
             <MdPerson className="text-xl text-gray-400" />
