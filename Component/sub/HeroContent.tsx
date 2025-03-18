@@ -21,7 +21,7 @@ const HeroContent = () => {
         {/* Left Section */}
         <div className="flex flex-col ml-2 sm:ml-0 md:ml-0 lg:ml-32 justify-center gap-2 sm:gap-5 md:gap-4 text-center md:text-left w-full">
           <motion.div
-            variants={slideInFromTop(2.5)}
+            variants={slideInFromTop(1.25)}
             className="welcome-box w-[200px] sm:w-[260px] md:w-[300px] py-[6px] sm:py-[8px] px-[4px] border rounded-xl border-[#7042f88b] opacity-[0.9] mx-auto md:mx-0"
           >
             <span className="flex items-center justify-start">
@@ -34,7 +34,7 @@ const HeroContent = () => {
 
           {/* Main text */}
           <motion.div
-            variants={slideInFromTop(3)}
+            variants={slideInFromTop(1.5)}
             className="my-3 sm:my-4 md:my-5 z-[10]"
           >
             <h2 className="Welcome-text uppercase tracking-wide text-base sm:text-lg md:text-md lg:text-xl text-blue-100 text-center md:text-left">
@@ -43,7 +43,7 @@ const HeroContent = () => {
           </motion.div>
 
           <motion.div
-            variants={slideInFromLeft(3.5)}
+            variants={slideInFromLeft(1.75)}
             className="flex flex-col gap-6 mt-3 text-6xl font-bold text-white max-w-[700px] sm:max-w-[600px] w-auto h-auto"
           >
             <span>
@@ -56,7 +56,7 @@ const HeroContent = () => {
             </span>
           </motion.div>
           <motion.div
-            variants={slideInFromLeft(4)}
+            variants={slideInFromLeft(2)}
             className="flex flex-col mt-3 mb-0 text-3xl font-bold text-white max-w-[600px] w-auto h-auto"
           >
             <span>
@@ -69,7 +69,7 @@ const HeroContent = () => {
           </motion.div>
 
           <motion.p
-            variants={slideInFromLeft(4.5)}
+            variants={slideInFromLeft(2.25)}
             className="text-lg text-gray-400 my-5 max-w-[600px]"
           >
             Full Stack Software Developer with experience in MERN Stack Web
@@ -77,7 +77,7 @@ const HeroContent = () => {
           </motion.p>
 
           {/* Button */}
-          <motion.div variants={slideInFromLeft(5)} className="mx-auto md:mx-0">
+          <motion.div variants={slideInFromLeft(3.75)} className="mx-auto md:mx-0">
             <Button />
           </motion.div>
         </div>
@@ -85,7 +85,7 @@ const HeroContent = () => {
         {/* Right Section - Image */}
 
         <motion.div
-          variants={slideInFromRight(5.6)}
+          variants={slideInFromRight(2.5)}
           className="relative flex top-0 flex-col sm:flex-row items-center justify-center w-full p-4 sm:p-6 lg:p-8"
         >
           <HeroCard />

@@ -30,7 +30,7 @@ const GetInTouch = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center w-full min-h-screen p-2 bg-opacity-0 z-20 text-white">
+    <div className="flex flex-col items-center justify-center w-full min-h-screen p-4 bg-opacity-0 z-20 text-white">
       <h1 className="text-3xl font-semibold text-center mb-6">Get in Touch</h1>
       <div className="flex flex-col lg:flex-row items-center justify-center w-full max-w-6xl gap-10 p-3 bg-gray-800 rounded-lg shadow-lg">
         {/* Google Map */}
@@ -47,36 +47,39 @@ const GetInTouch = () => {
         {/* Contact Form */}
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="w-full lg:w-1/2 flex flex-col gap-4 p-16"
+          className="w-full lg:w-1/2 flex flex-col gap-4 p-6"
         >
           <div className="flex items-center gap-2">
             <MdPerson className="text-xl text-gray-400" />
             <TextField
-              label="Name"
+              className="text-xl bg-gray-400 rounded-sm"
+              label="Balgobind Chaaudhary"
               variant="outlined"
               fullWidth
               {...register("name")}
               error={!!errors.name}
               helperText={errors.name?.message}
-            />
+              />
           </div>
 
           <div className="flex items-center gap-2">
             <MdEmail className="text-xl text-gray-400" />
             <TextField
-              label="Email"
+              className="text-xl bg-gray-400 rounded-sm"
+              label="gobind9800@gmail.com"
               variant="outlined"
               fullWidth
               {...register("email")}
               error={!!errors.email}
               helperText={errors.email?.message}
-            />
+              />
           </div>
 
           <div className="flex items-center gap-2">
             <MdPhone className="text-xl text-gray-400" />
             <TextField
-              label="Contact Number"
+              className="text-xl bg-gray-400 rounded-sm"
+              label="+977 9816494422"
               variant="outlined"
               fullWidth
               {...register("contact")}
@@ -86,6 +89,7 @@ const GetInTouch = () => {
           </div>
 
           <Button
+          
             type="submit"
             variant="contained"
             color="primary"

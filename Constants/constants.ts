@@ -243,13 +243,6 @@ export const Other_skill = [
 ];
 export const Testimonials = [
   {
-    name: "Arun Neupane",
-    Image: "/arun.jpg",
-    description: "Do not be a coder be programer with latest and popular tech",
-    width: 40,
-    height: 40,
-  },
-  {
     name: "Pramod Tharu",
     description: "Do not be a coder be programer with latest and popular tech",
     Image: "/prampod.jpg",
@@ -259,6 +252,13 @@ export const Testimonials = [
   {
     name: "Sabin Chaudhary",
     Image: "/sabin.jpg",
+    description: "Do not be a coder be programer with latest and popular tech",
+    width: 40,
+    height: 40,
+  },
+  {
+    name: "Arun Neupane",
+    Image: "/arun.jpg",
     description: "Do not be a coder be programer with latest and popular tech",
     width: 40,
     height: 40,

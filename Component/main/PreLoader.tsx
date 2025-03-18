@@ -7,7 +7,7 @@ const Preloader = () => {
 
   useEffect(() => {
     const handleLoad = () => {
-      setTimeout(() => setLoading(false), 2000); // Ensures video plays for at least 3 seconds
+      setTimeout(() => setLoading(false), 1000); // Ensures video plays for at least 3 seconds
     };
 
     if (document.readyState === "complete") {
