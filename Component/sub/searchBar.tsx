@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { Search } from "lucide-react";
 
-const SearchBar: React.FC = () => {
+const SearchBar = () => {
   const [search, setSearch] = useState("");
 
   return (
-    <div className="flex items-center space-x-2 bg-gray-100 dark:bg-gray-800 p-2 rounded-full  shadow-sm">
+    <div className=" relative flex items-center space-x-2  p-2 rounded-full  shadow-sm">
       <input
         type="text"
         placeholder="Search..."
@@ -13,10 +13,8 @@ const SearchBar: React.FC = () => {
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
-      <kbd className="hidden xs:hidden md:inline bg-gray-200 dark:bg-gray-700 px-2 py-1 text-xs rounded text-gray-600 dark:text-gray-300 border border-gray-400 dark:border-gray-500">
-        Ctrl+K
-      </kbd>
-      <Search className=" text-gray-300 dark:text-gray-300" size={20} />
+     
+      <Search className="absolute right-7 text-gray-300" size={20} />
     </div>
   );
 };

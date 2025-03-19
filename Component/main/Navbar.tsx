@@ -43,7 +43,7 @@ const Navbar = () => {
             Contact
           </a>
         </div>
-          <SearchComponent/>
+        <SearchComponent />
 
         {/* Mobile Menu Toggle */}
         <button

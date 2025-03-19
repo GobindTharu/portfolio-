@@ -27,11 +27,14 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "Component/sub/TerminalTab.tsx",
+    "Component/unused/TerminalTab.tsx",
     "Component/main/Footer.jsx",
-    "Component/sub/Card.jsx",
-    "Component/sub/Encryption.tsx",
-    "Component/sub/SliderCard.jsx"
-, "Component/sub/card02.jsx", "Component/sub/SwitchMode.tsx"  ],
+    "Component/unused/Card.jsx",
+    "Component/unused/Encryption.tsx",
+    "Component/unused/SliderCard.jsx",
+    "Component/unused/card02.jsx",
+    "Component/unused/SwitchMode.tsx",
+    "Component/unused/ProjectOverview.jsx"
+, "Component/sub/DashBord.jsx"  ],
   "exclude": ["node_modules"]
 }

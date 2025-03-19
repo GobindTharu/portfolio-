@@ -1,5 +1,5 @@
 import SearchBar from "../sub/searchBar";
-import NavbarIcons from "../sub/ThemeIcon";
+import NavbarIcons from "../sub/NavIcons";
 import React from "react";
 const SearchComponent = () => {
   return (
