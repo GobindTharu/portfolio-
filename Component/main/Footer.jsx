@@ -13,18 +13,7 @@ const Footer = () => {
   return (
     <div className="relative w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] ">
       <div className="min-w-[200px] h-auto flex items-center justify-center">
-      <div className="w-auto h-auto flex flex-col items-start justify-center">
-        <div className="font-bold text-[16px]"></div>
-        <p className="flex flex-row items-center my-[15px] cursor-pointer">
-          <span className="text-[15px] ml-[6px]">Become Sponsor</span>
-        </p>
-        <p className="flex flex-row items-center my-[15px] cursor-pointer">
-          <span className="text-[15px] ml-[6px]">Learning about me</span>
-        </p>
-        <p className="flex flex-row items-center my-[15px] cursor-pointer">
-          <span className="text-[15px] ml-[6px]">gobind9800@gmail.com</span>
-        </p>
-      </div>
+      
       <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
         <div className="font-bold text-[16px]">About</div>
         <p className="flex flex-row items-center my-[15px] cursor-pointer">
