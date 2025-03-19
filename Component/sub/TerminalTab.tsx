@@ -37,164 +37,171 @@ const TerminalTab: React.FC = () => {
   };
 
   return (
-    <Box
-      className="relative rounded-2xl"
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        height: "auto",
-        width: "auto",
-        bgcolor: "#1E1E1E",
-        color: "#D4D4D4",
-      }}
-    >
-      <Paper
-        elevation={3}
-        className="vscode-container m-2"
+      <Box
+      
+        className="rounded-2xl "
         sx={{
-          flex: 1,
-          display: "flex",
-          flexDirection: "column",
-          bgcolor: "#252526",
+          height: "auto",
           width: "auto",
+          bgcolor: "#1E1E1E",
+          color: "#D4D4D4",
         }}
       >
-        {/* Title Bar */}
-        <Box
-          className="title-bar"
+        <Paper
+          elevation={3}
+          className="vscode-container m-2"
           sx={{
+            flex: 1,
             display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            bgcolor: "#0007",
-            color: "white",
+            flexDirection: "column",
+            bgcolor: "#252526",
+            width: "auto",
           }}
         >
-          <Box sx={{ display: "flex", gap: 1 }}>
-            <span className="control close">🔴</span>
-            <span className="control minimize">🟡</span>
-            <span className="control maximize">🟢</span>
-          </Box>
-          <Typography variant="h6" fontSize={{ xs: "1rem", md: "1.25rem" }}>
-            Visual Studio Code
-          </Typography>
-        </Box>
-
-        <Box
-          className="code-main-area-wrapper"
-          sx={{ display: "flex", flex: 1, flexWrap: "nowrap" }}
-        >
-          {/* Sidebar */}
-          <Paper
-            elevation={1}
-            className="sidebar lowercase overflow-hidden"
-            sx={{ width: { xs: 0, md: 150, sm: 100 }, bgcolor: "#333" }}
-          >
-            <List className="lowercase">
-              {["",
-                "File",
-                "Search",
-                "Source Control",
-                "Run and Debug",
-                "Extensions",
-                "Setting",
-              ].map((item, index) => (
-                <ListItem key={index} sx={{ color: "#D4D4D4" }}>
-                  <ListItemText primary={item} />
-                </ListItem>
-              ))}
-            </List>
-          </Paper>
-
-          {/* Code Editor Section */}
+          {/* Title Bar */}
           <Box
-            className="code-content-wrapper"
+            className="title-bar"
             sx={{
-              flex: 1,
               display: "flex",
-              flexDirection: "column",
-              bgcolor: "#1E1E1E",
-              overflowX: "auto",
+              justifyContent: "space-between",
+              alignItems: "center",
+              bgcolor: "#0007",
+              color: "white",
             }}
           >
-            {/* Tabs */}
-            <Tabs
-              value={activeTab}
-              indicatorColor="primary"
-              textColor="inherit"
-              variant="scrollable"
-              scrollButtons="auto"
-              onChange={(_, newValue) => setActiveTab(newValue)}
-            >
-              {tabs.map((label, index) => (
-                <Tab
-                  key={index}
-                  label={label}
-                  sx={{ color: "#D4D4D4", textTransform: "lowercase" }}
-                />
-              ))}
-            </Tabs>
+            <Box sx={{ display: "flex", gap: 1 }}>
+              <span className="control close">🔴</span>
+              <span className="control minimize">🟡</span>
+              <span className="control maximize">🟢</span>
+            </Box>
+            <Typography variant="h6" fontSize={{ xs: "1rem", md: "1.25rem" }}>
+              Visual Studio Code
+            </Typography>
+          </Box>
 
-            {/* Monaco Code Editor */}
-            <Box
-              className="code-editor-wrapper"
-              sx={{ flex: 1, bgcolor: "#1E1E1E" }}
+          <Box
+            className="code-main-area-wrapper"
+            sx={{ display: "flex", flex: 1, flexWrap: "nowrap" }}
+          >
+            {/* Sidebar */}
+            <Paper
+              elevation={1}
+              className="sidebar lowercase overflow-hidden"
+              sx={{ width: { xs: 0, md: 150, sm: 100 }, bgcolor: "#333" }}
             >
-              <Editor
-                height="50vh"
-                theme="vs-dark"
-                defaultLanguage="javascript"
-                value={code}
-                onChange={(value) => setCode(value || "")}
-              />
+              <List className="lowercase">
+                {[
+                  "",
+                  "File",
+                  "Search",
+                  "Source Control",
+                  "Run and Debug",
+                  "Extensions",
+                  "Setting",
+                ].map((item, index) => (
+                  <ListItem key={index} sx={{ color: "#D4D4D4" }}>
+                    <ListItemText primary={item} />
+                  </ListItem>
+                ))}
+              </List>
+            </Paper>
+
+            {/* Code Editor Section */}
+            <Box
+              className="code-content-wrapper"
+              sx={{
+                flex: 1,
+                display: "flex",
+                flexDirection: "column",
+                bgcolor: "#1E1E1E",
+                overflowX: "auto",
+              }}
+            >
+              {/* Tabs */}
+              <Tabs
+                value={activeTab}
+                indicatorColor="primary"
+                textColor="inherit"
+                variant="scrollable"
+                scrollButtons="auto"
+                onChange={(_, newValue) => setActiveTab(newValue)}
+              >
+                {tabs.map((label, index) => (
+                  <Tab
+                    key={index}
+                    label={label}
+                    sx={{ color: "#D4D4D4", textTransform: "lowercase" }}
+                  />
+                ))}
+              </Tabs>
+
+              {/* Monaco Code Editor */}
+              <Box
+                className="code-editor-wrapper"
+                sx={{ flex: 1, bgcolor: "#1E1E1E" }}
+              >
+                <Editor
+                  height="50vh"
+                  theme="vs-dark"
+                  defaultLanguage="javascript"
+                  value={code}
+                  onChange={(value) => setCode(value || "")}
+                />
+              </Box>
             </Box>
           </Box>
-        </Box>
 
-        {/* Terminal */}
-        <Paper
-          elevation={2}
-          className="terminal-container "
-          sx={{ bgcolor: "#0009", color: "#D4D4D4" }}
-        >
-          <Typography
-            variant="subtitle1"
-            className="terminal-header"
-            sx={{ color: "#00FF00" }}
+          {/* Terminal */}
+          <Paper
+            elevation={2}
+            className="terminal-container "
+            sx={{ bgcolor: "#0009", color: "#D4D4D4" }}
           >
-            Terminal
-          </Typography>
-          <Typography
-            variant="subtitle1"
-            className="terminal-header flex"
-            sx={{ color: "#00FF00" }}
-          >
-            gobind@ubuntu:~$
-          
-          <TextField
-            fullWidth
-            className="flex justify-center items-center"
-            variant="standard"
-            InputProps={{
-              disableUnderline: true,
-              sx: { paddingLeft: "12px", color: "#fff", fontFamily: "monospace" },
-            }}
-            value={terminalInput}
-            onChange={(e) => setTerminalInput(e.target.value)}
-            onKeyDown={handleCommand}
-            placeholder=" Type a command..."
-            />
+            <Typography
+              variant="subtitle1"
+              className="terminal-header"
+              sx={{ color: "#00FF00" }}
+            >
+              Terminal
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              className="terminal-header flex"
+              sx={{ color: "#00FF00" }}
+            >
+              gobind@ubuntu:~$
+              <TextField
+                fullWidth
+                className="flex justify-center items-center"
+                variant="standard"
+                InputProps={{
+                  disableUnderline: true,
+                  sx: {
+                    paddingLeft: "12px",
+                    color: "#fff",
+                    fontFamily: "monospace",
+                  },
+                }}
+                value={terminalInput}
+                onChange={(e) => setTerminalInput(e.target.value)}
+                onKeyDown={handleCommand}
+                placeholder=" Type a command..."
+              />
             </Typography>
             <Box sx={{ height: "70px", overflowY: "auto" }}>
               {terminalOutput.map((line, index) => (
-                <Typography key={index} variant="body2" sx={{ color: "#D4D4D4" }}>
+                <Typography
+                  key={index}
+                  variant="body2"
+                  sx={{ color: "#D4D4D4" }}
+                >
                   {line}
                 </Typography>
               ))}
             </Box>
+          </Paper>
         </Paper>
-      </Paper>
-    </Box>
+      </Box>
   );
 };
 

@@ -1,8 +1,9 @@
-"use client"
+"use client";
 import { Button, MenuItem, Select } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import TerminalTab from "./TerminalTab";
 
 const sections = [
   { name: "Code", link: "/code" },
@@ -12,25 +13,40 @@ const sections = [
   { name: "Secure", link: "/secure" },
 ];
 
-export const About = () => {
+export const ProjectView = () => {
   const [selectedSection, setSelectedSection] = useState("Collaborate");
+    // const [value, setValue] = React.useState("recents");
+
+   const handleChange = (event, newValue) => {
+     setValue(newValue);
+   };
+
 
   return (
-    <div className="border-amber-50 border flex items-end min-h-screen p-6 transition">
+    <div className="relative flex flex-col items-center justify-center min-h-screen p-6 transition gap-3">
+      {/* Here is the projects overview */}
+      {/* code  */}
+      <TerminalTab />
+      {/* plan */}
+      {/* collaborate */}
+      {/* automate */}
+      {/* secure */}
       <div className="max-w-4xl mx-auto bg-gray-900 rounded-2xl shadow-lg p-6 relative">
-        <div className="absolute top-4 right-4"></div>
+        <div className=" top-4 right-4"></div>
 
         {/* Desktop View */}
+
         <div className="hidden md:flex justify-center gap-4 mb-4">
           {sections.map(({ name, link }) => (
-            <Link href={link} key={name} className="flex flex-col items-center">
-              <Button
-                variant="outlined"
-                className="flex flex-col items-center px-4 py-2 rounded-lg transition"
-              >
-                {name}
-              </Button>
-            </Link>
+            <Button
+              label={selectedSection}
+              value={selectedSection}
+              onChange={handleChange}
+              variant="outlined"
+              className="flex flex-col items-center px-4 py-2 rounded-lg transition"
+            >
+              {name}
+            </Button>
           ))}
         </div>
 
@@ -57,8 +73,7 @@ export const About = () => {
 
         <div className="p-6 bg-gray-800 rounded-xl">
           <p className="text-lg text-gray-400">
-            Work easily with your team in real-time with GitHub Pull Requests,
-            code reviews, and discussions.
+            Performance and security based Development Projects workflow
           </p>
           <p className="text-lg text-gray-400">
             Content for section coming soon...
