@@ -32,6 +32,6 @@
     "Component/sub/Card.jsx",
     "Component/sub/Encryption.tsx",
     "Component/sub/SliderCard.jsx"
-  ],
+, "Component/sub/card02.jsx", "Component/sub/SwitchMode.tsx"  ],
   "exclude": ["node_modules"]
 }

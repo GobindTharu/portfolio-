@@ -11,7 +11,7 @@ import { HeroCard } from "./HeroCard";
 
 const HeroContent = () => {
   return (
-    <div className="relative w-full ">
+    <div className="relative w-full px-20">
       {/* Hero Section */}
       <motion.div
         initial="hidden"

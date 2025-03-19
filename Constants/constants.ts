@@ -278,3 +278,10 @@ export const Testimonials = [
     height: 50,
   },
 ];
+export const sections = [
+  { name: "Code", imageUrl: "/public/react.png", link: "/code" },
+  { name: "Plan", imageUrl: "/public/tailwind.png", link: "/plan" },
+  { name: "Collaborate", imageUrl: "/public/docker.webp", link: "/collaborate" },
+  { name: "Automate", imageUrl: "/public/express.png", link: "/automate" },
+  { name: "Secure", imageUrl: "/secure.png", link: "/secure" },
+];

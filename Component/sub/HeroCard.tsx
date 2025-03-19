@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { CardContent, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 
 export const HeroCard =()=> {
@@ -20,14 +19,6 @@ export const HeroCard =()=> {
             objectFit="cover"
           />
         </motion.div>
-        <CardContent className="absolute bottom-2 left-0 right-0 text-center">
-          <Typography
-            variant="h2"
-            className="text-md  cursive uppercase bg-gradient-to-r from-purple-700 to-blue-500 bg-clip-text text-transparent  xs:text-base sm:text-2xl lg:text-xl font-extrabold"
-          >
-            BALGOBIND CHAUDHARY
-          </Typography>
-        </CardContent>
       </motion.div>
     </div>
   );
