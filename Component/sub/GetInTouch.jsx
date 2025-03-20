@@ -53,7 +53,7 @@ const GetInTouch = () => {
             <MdPerson className="text-xl text-gray-400" />
             <TextField
               className="text-xl bg-gray-400 rounded-sm"
-              label="Balgobind Chaaudhary"
+              label="Full Name"
               variant="outlined"
               fullWidth
               {...register("name")}
@@ -66,7 +66,7 @@ const GetInTouch = () => {
             <MdEmail className="text-xl text-gray-400" />
             <TextField
               className="text-xl bg-gray-400 rounded-sm"
-              label="gobind9800@gmail.com"
+              label="Email"
               variant="outlined"
               fullWidth
               {...register("email")}
@@ -79,7 +79,7 @@ const GetInTouch = () => {
             <MdPhone className="text-xl text-gray-400" />
             <TextField
               className="text-xl bg-gray-400 rounded-sm"
-              label="+977 9816494422"
+              label="Phone"
               variant="outlined"
               fullWidth
               {...register("contact")}

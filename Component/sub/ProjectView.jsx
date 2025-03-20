@@ -1,9 +1,9 @@
 "use client";
 import { Button, MenuItem, Select } from "@mui/material";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import TerminalTab from "./TerminalTab";
+// import TerminalTab from "./TerminalTab";
+import { PreviewCard } from "./PreviewCard";
 
 const sections = [
   { name: "Code", link: "/code" },
@@ -15,20 +15,20 @@ const sections = [
 
 export const ProjectView = () => {
   const [selectedSection, setSelectedSection] = useState("Collaborate");
-    // const [value, setValue] = React.useState("recents");
+  // const [value, setValue] = React.useState("recents");
 
-   const handleChange = (event, newValue) => {
-     setValue(newValue);
-   };
-
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
 
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen p-6 transition gap-3">
       {/* Here is the projects overview */}
       {/* code  */}
-      <TerminalTab />
+      {/* <TerminalTab /> */}
       {/* plan */}
       {/* collaborate */}
+      <PreviewCard />
       {/* automate */}
       {/* secure */}
       <div className="max-w-4xl mx-auto bg-gray-900 rounded-2xl shadow-lg p-6 relative">
