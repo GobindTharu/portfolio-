@@ -1,8 +1,10 @@
 "use client";
 
+import * as React from "react";
 import { Button } from "@mui/material";
 import Link from "next/link";
 import { Testimonials } from "@/Constants/constants";
+import { HoverRating } from "@/Component/sub/Rating";
 
 export const Testimonial = () => {
   return (
@@ -33,12 +35,17 @@ export const Testimonial = () => {
                       {item?.name}
                     </h1>
                   </Link>
+                  <div className="flex p-6 bg-opacity-0 rounded-xl">
+                    <p className="text-lg text-gray-200"></p>
+                  </div>
+
+                  <HoverRating />
 
                   <Link href={"/detail"}>
                     <Button
                       variant="outlined"
                       type="large"
-                      className="bg-blue-500 text-white text-xs md:text-sm px-4 py-1.5 rounded-lg"
+                      className="bg-blue-500 border border-e-amber-50 text-white text-xs md:text-sm px-4 py-1.5 rounded-lg"
                     >
                       Learn More
                     </Button>

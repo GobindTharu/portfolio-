@@ -34,7 +34,8 @@
     "Component/unused/SliderCard.jsx",
     "Component/unused/card02.jsx",
     "Component/unused/SwitchMode.tsx",
-    "Component/unused/ProjectOverview.jsx"
-, "Component/sub/DashBord.jsx"  ],
+    "Component/unused/ProjectOverview.jsx",
+    "Component/main/sub/DashBord.jsx"
+  ],
   "exclude": ["node_modules"]
 }

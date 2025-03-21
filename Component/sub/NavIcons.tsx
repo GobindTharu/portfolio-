@@ -23,7 +23,7 @@ const NavbarIcons = () => {
         <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full px-1">
     4
         </span>
-      </div>
+      </div>=
     </div>
   );
 };
