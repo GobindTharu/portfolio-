@@ -4,18 +4,11 @@ import Link from "next/link";
 import { useState } from "react";
 // import TerminalTab from "./TerminalTab";
 import { PreviewCard } from "./PreviewCard";
-
-const sections = [
-  { name: "Code", link: "/code" },
-  { name: "Plan", link: "/plan" },
-  { name: "Collaborate", link: "/collaborate" },
-  { name: "Automate", link: "/automate" },
-  { name: "Secure", link: "/secure" },
-];
+import { sections } from "@/Constants/constants";
 
 export const ProjectView = () => {
   const [selectedSection, setSelectedSection] = useState("Collaborate");
-  // const [value, setValue] = React.useState("recents");
+  const [value, setValue] = useState("Collaborate");
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -43,9 +36,11 @@ export const ProjectView = () => {
               value={selectedSection}
               onChange={handleChange}
               variant="outlined"
-              className="flex flex-col items-center px-4 py-2 rounded-lg transition"
+              className="flex flex-col bg-amber-50 items-center px-4 py-2 rounded-lg transition"
             >
-              {name}
+              <Link href={link} className="w-full block">
+                {name}
+              </Link>
             </Button>
           ))}
         </div>

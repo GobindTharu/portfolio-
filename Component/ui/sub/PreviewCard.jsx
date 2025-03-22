@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { HoverRating } from "./Rating";
 
 export const PreviewCard = () => {
   return (
@@ -12,26 +13,27 @@ export const PreviewCard = () => {
         {/* Left Image Section - Mobile View Adjustment */}
         <div className="relative w-full h-auto md:w-3/4 lg:w-2/3 md:h-auto m-4 md:m-8 border border-gray-500 rounded-3xl shadow-xl shadow-gray-700">
           <Image
-            src="/desktop.png" // Replace with your image path
+            src="/desktop.png"
             alt="Desktop Image"
-            layout="responsive" // Use responsive layout for mobile view
-            width={1200} // Set the width of the image
-            height={800} // Set the height of the image
+            layout="responsive"
+            width={1200}
+            height={800}
             className="rounded-4xl"
           />
         </div>
 
-        {/* Right Image Section - Mobile (Hidden on Small Screens) */}
+        {/* Right Image Section - mobile*/}
         <div className="border-gray-200 border hidden md:block absolute top-0 right-60 z-20 my-30 w-70 min-h-160 md:h-60 lg:h-auto p-2 md:p-4 rounded-4xl shadow-xl shadow-gray-400">
           <Image
-            src="/mobile.png" // Replace with your image path
+            src="/mobile.png"
             alt="Mobile Image"
             layout="fill"
             className="rounded-4xl"
           />
         </div>
       </div>
-      <button className="relative flex h-12 sm:h-12 w-full max-w-[300px] sm:max-w-[340px] md:max-w-[460px] overflow-hidden rounded-lg p-[3px] focus:outline-none hover:mx-20 mt-12 ">
+      <HoverRating />
+      <button className="relative flex h-12 sm:h-12 w-full max-w-[300px] sm:max-w-[340px] md:max-w-[460px] overflow-hidden rounded-lg p-[3px] focus:outline-none hover:mx-20 mt-2 ">
         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
         <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-5 sm:px-7 text-xs sm:text-sm font-medium text-white backdrop-blur-3xl uppercase">
           Live Preview

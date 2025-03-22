@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import * as React from "react";
 import Rating from "@mui/material/Rating";
 import Box from "@mui/material/Box";
@@ -6,15 +6,15 @@ import StarIcon from "@mui/icons-material/Star";
 
 const labels = {
   0.5: "Useless",
-  1: "Useless+",
-  1.5: "Poor",
-  2: "Poor+",
-  2.5: "Ok",
-  3: "Ok+",
-  3.5: "Good",
-  4: "Good+",
-  4.5: "Excellent",
-  5: "Excellent+",
+  1: "poor",
+  1.5: "Average",
+  2: "Decent",
+  2.5: "Good",
+  3: "Nice",
+  3.5: "Great",
+  4: "Excellent",
+  4.5: "Outstanding",
+  5: "Masterpiece",
 };
 
 function getLabelText(value) {
@@ -22,11 +22,11 @@ function getLabelText(value) {
 }
 
 export const HoverRating = () => {
-  const [value, setValue] = React.useState(2);
+  const [value, setValue] = React.useState(3.5);
   const [hover, setHover] = React.useState(-1);
 
   return (
-    <Box sx={{ width: 200, display: "flex", alignItems: "center" }}>
+    <Box className="w-52 flex items-center p-4 rounded-lg shadow-md">
       <Rating
         name="hover-feedback"
         value={value}
@@ -38,11 +38,16 @@ export const HoverRating = () => {
         onChangeActive={(event, newHover) => {
           setHover(newHover);
         }}
-        emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}
+        emptyIcon={
+          <StarIcon
+            className="text-white opacity-50"
+            fontSize="inherit"
+          />
+        }
       />
-      {value !== null && (
-        <Box sx={{ ml: 2 }}>{labels[hover !== -1 ? hover : value]}</Box>
-      )}
+      <Box className="ml-2 text-gray-300 font-medium bg-opacity-0 px-2 py-1 rounded">
+        {labels[hover !== -1 ? hover : value]}
+      </Box>
     </Box>
   );
-}
+};

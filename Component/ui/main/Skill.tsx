@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import {
   slideInFromRight,
-} from "@/Utils/motion";import { Skills } from "@/Component/sub/Skills";
+} from "@/Utils/motion";import { Skills } from "@/Component/ui/sub/Skills";
 
 export const Skill = () => {
   return (

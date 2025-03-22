@@ -6,7 +6,7 @@ import {
   slideInFromTop,
 } from "@/Utils/motion";
 import { SparklesIcon } from "@heroicons/react/16/solid";
-import {Button1, Button2} from "./Button";
+import { Button1, Button2 } from "./Button";
 import { HeroCard } from "./HeroCard";
 
 const HeroContent = () => {
@@ -77,7 +77,10 @@ const HeroContent = () => {
           </motion.p>
 
           {/* Button */}
-          <motion.div variants={slideInFromLeft(1.75)} className="flex mx-auto md:mx-0 gap-5">
+          <motion.div
+            variants={slideInFromLeft(1.75)}
+            className="flex mx-auto md:mx-0 gap-5"
+          >
             <Button1 />
             <Button2 />
           </motion.div>

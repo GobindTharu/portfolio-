@@ -1,6 +1,6 @@
-import Footer from "@/Component/main/Footer";
-import Hero from "@/Component/main/Hero";
-import Navbar from "@/Component/main/Navbar";
+import Footer from "@/Component/ui/main/Footer";
+import Hero from "@/Component/ui/main/Hero";
+import Navbar from "@/Component/ui/main/Navbar";
 export default function Home() {
   return (
     <main className="h-full w-auto overflow-x-hidden">

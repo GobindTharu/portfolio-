@@ -4,7 +4,6 @@ import * as React from "react";
 import { Button } from "@mui/material";
 import Link from "next/link";
 import { Testimonials } from "@/Constants/constants";
-import { HoverRating } from "@/Component/sub/Rating";
 
 export const Testimonial = () => {
   return (
@@ -36,10 +35,9 @@ export const Testimonial = () => {
                     </h1>
                   </Link>
                   <div className="flex p-6 bg-opacity-0 rounded-xl">
-                    <p className="text-lg text-gray-200"></p>
+                    <p className="text-lg text-gray-200">Hello</p>
                   </div>
 
-                  <HoverRating />
 
                   <Link href={"/detail"}>
                     <Button
