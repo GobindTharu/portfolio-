@@ -1,5 +1,5 @@
 "use client";
-import { Button, MenuItem, Select } from "@mui/material";
+import { Box, Button, MenuItem, Select } from "@mui/material";
 import Link from "next/link";
 import { useState } from "react";
 // import TerminalTab from "./TerminalTab";
@@ -30,19 +30,21 @@ export const ProjectView = () => {
         {/* Desktop View */}
 
         <div className="hidden md:flex justify-center gap-4 mb-4">
-          {sections.map(({ name, link }) => (
-            <Button
-              label={selectedSection}
-              value={selectedSection}
-              onChange={handleChange}
-              variant="outlined"
-              className="flex flex-col bg-amber-50 items-center px-4 py-2 rounded-lg transition"
-            >
-              <Link href={link} className="w-full block">
-                {name}
-              </Link>
-            </Button>
-          ))}
+          {sections.map((name, link) => {
+            <Box>
+              <Button
+                label={selectedSection}
+                value={selectedSection}
+                onChange={handleChange}
+                variant="outlined"
+                className="flex flex-col bg-amber-50 items-center px-4 py-2 rounded-lg transition"
+              >
+                <Link href={link} className="w-full block">
+                  {name}
+                </Link>
+              </Button>
+            </Box>;
+          })}
         </div>
 
         {/* Mobile View */}
@@ -50,7 +52,7 @@ export const ProjectView = () => {
           <Select
             value={selectedSection}
             onChange={(e) => setSelectedSection(e.target.value)}
-            className="w-full bg-gray-700 text-gray-900"
+            className="w-full bg-gray-300 text-gray-900 "
           >
             {sections.map(({ name, link }) => (
               <MenuItem

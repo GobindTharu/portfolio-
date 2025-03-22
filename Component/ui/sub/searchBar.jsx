@@ -32,16 +32,16 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="relative flex items-center space-x-2 p-2 rounded-full shadow-sm">
+    <div className="relative flex items-center justify-end p-2 rounded-full shadow-sm">
       <input
         type="text"
         placeholder="Search..."
-        className="px-4 py-2 text-md rounded-full text-gray-100 bg-gray-500 focus:outline-none"
+        className="w-32 sm:w-50 md:w-60 lg:w-70 py-2 px-2 text-md rounded-full text-gray-100 bg-gray-500 focus:outline-none"
         value={search}
         onChange={(e) => handleSearch(e.target.value)}
       />
       <Search
-        className="absolute right-7 text-gray-100 cursor-pointer"
+        className="absolute right-3 text-gray-100 cursor-pointer"
         size={20}
         onClick={handleClickSearchIcon}
       />

@@ -3,7 +3,7 @@ import NavbarIcons from "../sub/NavIcons";
 import SearchBar from "../sub/searchBar";
 const SearchComponent = () => {
   return (
-    <div className="flex items-center space-x-4  shadow-sm">
+    <div className="flex items-center shadow-sm">
       <SearchBar />
       <NavbarIcons />
     </div>

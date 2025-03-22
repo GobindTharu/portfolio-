@@ -43,20 +43,22 @@ const Navbar = () => {
             Contact
           </a>
         </div>
-        <SearchComponent />
+        <div className="flex">
+          <SearchComponent />
 
-        {/* Mobile Menu Toggle */}
-        <button
-          className="lg:hidden text-gray-300"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
+          {/* Mobile Menu Toggle */}
+          <button
+            className="lg:hidden text-gray-300"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden absolute top-[65px] right-0 w-[100vw]  h-[100vh] bg-[#030014] backdrop-blur-md shadow-md flex flex-col items-center py-12 space-y-4 text-gray-200 text-sm font-medium ">
+        <div className="lg:hidden absolute top-[65px] right-0 w-[60vw]  h-[80vh] bg-[#030014] backdrop-blur-md shadow-md flex flex-col items-center py-12 space-y-4 text-gray-200 text-sm font-medium ">
           <a
             href="#about-me"
             className="flex flex-col items-center w-100 cursor-pointer uppercase  py-4 hover:tracking-widest hover:bg-[#878788]"
