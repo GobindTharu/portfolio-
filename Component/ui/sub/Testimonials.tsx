@@ -4,6 +4,7 @@ import * as React from "react";
 import { Button } from "@mui/material";
 import Link from "next/link";
 import { Testimonials } from "@/Constants/constants";
+import Image from "next/image";
 
 export const Testimonial = () => {
   return (
@@ -20,11 +21,12 @@ export const Testimonial = () => {
             >
               <div className="flex flex-col sm:flex-row items-center justify-start w-full gap-5">
                 <Link href={"/detail"}>
-                  <img
+                  <Image
                     className="h-[14rem] md:h-[23rem] object-cover rounded-lg"
                     src={item?.Image}
                     alt={item?.name}
                     width={400}
+                    height={600}
                   />
                 </Link>
 
@@ -34,15 +36,15 @@ export const Testimonial = () => {
                       {item?.name}
                     </h1>
                   </Link>
-                  <div className="flex p-6 bg-opacity-0 rounded-xl">
-                    <p className="text-lg text-gray-200">Hello</p>
+                  <div className="flex flex-row p-6 bg-opacity-0 rounded-xl">
+                    <p className=" text-lg text-gray-200 max-w-[500px] h-auto">
+                      evaluation of the strengths.{" "}
+                    </p>
                   </div>
-
 
                   <Link href={"/detail"}>
                     <Button
                       variant="outlined"
-                      type="large"
                       className="bg-blue-500 border border-e-amber-50 text-white text-xs md:text-sm px-4 py-1.5 rounded-lg"
                     >
                       Learn More

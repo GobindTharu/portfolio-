@@ -1,10 +1,16 @@
 "use client";
 
-import { useForm } from "react-hook-form";
+import { useForm, SubmitHandler } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { TextField, Button } from "@mui/material";
 import { MdEmail, MdPerson, MdPhone } from "react-icons/md";
+
+interface FormData {
+  name: string;
+  email: string;
+  contact: string;
+}
 
 const schema = yup.object().shape({
   name: yup.string().required("Name is required"),
@@ -16,16 +22,16 @@ const schema = yup.object().shape({
     .required("Contact number is required"),
 });
 
-const GetInTouch = () => {
+const GetInTouch: React.FC = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm({
+  } = useForm<FormData>({
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data) => {
+  const onSubmit: SubmitHandler<FormData> = (data) => {
     console.log("Form Data: ", data);
   };
 
@@ -38,7 +44,7 @@ const GetInTouch = () => {
           <iframe
             className="w-full h-full p-0"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.264728034817!2d83.46616727554962!3d27.68180597614348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996f92a0e3fd3cd%3A0x8f22e96f7a73947b!2sImilya%2C%20Lumbini%2032800%2C%20Nepal!5e0!3m2!1sen!2snp!4v1710262877654!5m2!1sen!2snp&zoom=15&scrollwheel=true"
-            allowFullScreen=""
+            allowFullScreen
             loading="lazy"
             style={{ border: 0 }}
           ></iframe>
@@ -52,33 +58,30 @@ const GetInTouch = () => {
           <div className="flex items-center gap-2">
             <MdPerson className="text-xl text-gray-400" />
             <TextField
-              className="text-xl bg-gray-400 rounded-sm"
               label="Full Name"
               variant="outlined"
               fullWidth
               {...register("name")}
               error={!!errors.name}
               helperText={errors.name?.message}
-              />
+            />
           </div>
 
           <div className="flex items-center gap-2">
             <MdEmail className="text-xl text-gray-400" />
             <TextField
-              className="text-xl bg-gray-400 rounded-sm"
               label="Email"
               variant="outlined"
               fullWidth
               {...register("email")}
               error={!!errors.email}
               helperText={errors.email?.message}
-              />
+            />
           </div>
 
           <div className="flex items-center gap-2">
             <MdPhone className="text-xl text-gray-400" />
             <TextField
-              className="text-xl bg-gray-400 rounded-sm"
               label="Phone"
               variant="outlined"
               fullWidth
@@ -88,13 +91,7 @@ const GetInTouch = () => {
             />
           </div>
 
-          <Button
-          
-            type="submit"
-            variant="contained"
-            color="primary"
-            className="mt-4"
-          >
+          <Button type="submit" variant="contained" color="primary" className="mt-4">
             Submit
           </Button>
         </form>

@@ -3,13 +3,13 @@
 import Image from "next/image";
 import { HoverRating } from "./Rating";
 
-export const PreviewCard = () => {
+export const PreviewCard: React.FC = () => {
   return (
     <>
       <h1 className="flex flex-1 justify-center items-center text-gray-200 text-2xl font-bold md:text-4xl lg:text-6xl uppercase py-4 sm:py-4 lg:py- mt-16 sm:mt-1 lg:mt-6 ">
         Project Overview
       </h1>
-      <div className="relative w-full  max-w-7xl md:min-h-0 bg-opacity-0 text-white rounded-lg shadow-lg flex flex-col md:flex-row overflow-hidden p-4 md:p-8 lg:p-12 mb-4 sm:mb-8 md:mb-10">
+      <div className="relative w-full max-w-7xl md:min-h-0 bg-opacity-0 text-white rounded-lg shadow-lg flex flex-col md:flex-row overflow-hidden p-4 md:p-8 lg:p-12 mb-4 sm:mb-8 md:mb-10">
         {/* Left Image Section - Mobile View Adjustment */}
         <div className="relative w-full h-auto md:w-3/4 lg:w-2/3 md:h-auto m-4 md:m-8 border border-gray-500 rounded-3xl shadow-xl shadow-gray-700">
           <Image
@@ -22,12 +22,13 @@ export const PreviewCard = () => {
           />
         </div>
 
-        {/* Right Image Section - mobile*/}
+        {/* Right Image Section - Mobile */}
         <div className="border-gray-200 border hidden md:block absolute top-0 right-60 z-20 my-30 w-70 min-h-160 md:h-60 lg:h-auto p-2 md:p-4 rounded-4xl shadow-xl shadow-gray-400">
           <Image
             src="/mobile.png"
             alt="Mobile Image"
             layout="fill"
+            objectFit="cover"
             className="rounded-4xl"
           />
         </div>

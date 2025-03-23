@@ -28,7 +28,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "Component/unused/TerminalTab.tsx",
-    "Component/ui/main/Footer.jsx",
+    "Component/ui/main/Footer.tsx",
     "Component/unused/Card.jsx",
     "Component/unused/Encryption.tsx",
     "Component/unused/SliderCard.jsx",
@@ -36,7 +36,7 @@
     "Component/unused/SwitchMode.tsx",
     "Component/unused/ProjectOverview.jsx",
     "Component/main/sub/DashBord.jsx",
-    "Component/ui/sub/searchBar.jsx"
-  ],
+    "Component/ui/sub/searchBar.tsx"
+, "Component/ui/sub/GetInTouch.tsx"  ],
   "exclude": ["node_modules"]
 }

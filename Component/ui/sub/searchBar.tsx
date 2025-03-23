@@ -1,34 +1,31 @@
-"use client"
+"use client";
 import { useState } from "react";
 import { Search } from "lucide-react";
 import { toast } from "react-toastify";
 import { data } from "@/Constants/constants";
 import { useRouter } from "next/navigation";
 
-const SearchBar = () => {
-  const [search, setSearch] = useState("");
-  const [results, setResults] = useState([]);
+const SearchBar: React.FC = () => {
+  const [search, setSearch] = useState<string>("");
+  const [results, setResults] = useState<string[]>([]);
   const router = useRouter();
 
-  const handleSearch = (query) => {
+  const handleSearch = (query: string) => {
     setSearch(query);
     setResults(
       data.filter((item) => item.toLowerCase().includes(query.toLowerCase()))
     );
   };
 
-  const handleSelectResult = (result) => {
+  const handleSelectResult = (result: string) => {
     setSearch(result);
     setResults([]);
-
     toast.success("Search successful!");
-
   };
 
   const handleClickSearchIcon = () => {
     toast.success("Search successful!");
-
-    router.push("/target-page"); 
+    router.push("/target-page");
   };
 
   return (
