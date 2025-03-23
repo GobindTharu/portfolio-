@@ -9,7 +9,7 @@ import Encryption from "../sub/Encryption";
 const Hero = () => {
   return (
     <>
-      <HeroContent />
+      <HeroContent displayText="Welcome to My Portfolio" />
       <Skill />
       <ProjectView />
       <Testimonial />
