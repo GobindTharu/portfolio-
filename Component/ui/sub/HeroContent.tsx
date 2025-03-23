@@ -1,4 +1,5 @@
 "use client";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import {
   slideInFromLeft,
@@ -8,8 +9,28 @@ import {
 import { SparklesIcon } from "@heroicons/react/16/solid";
 import { Button1, Button2 } from "./Button";
 import { HeroCard } from "./HeroCard";
+import { letterText } from "@/Constants/constants";
 
-const HeroContent = () => {
+const HeroContent: React.FC<{ displayText: string }> = () => {
+  const [displayText, setDisplayText] = useState("");
+  const [charIndex, setCharIndex] = useState(0);
+  const [isWriting, setIsWriting] = useState(false);
+
+  useEffect(() => {
+    if (isWriting && charIndex < letterText.length) {
+      const timer = setTimeout(() => {
+        setDisplayText((prevText) => prevText + letterText[charIndex]);
+        setCharIndex((prevIndex) => prevIndex + 1);
+      }, 50);
+      return () => clearTimeout(timer);
+    }
+  }, [charIndex,  isWriting]);
+
+  const startWriting = () => {
+    setDisplayText("");
+    setCharIndex(0);
+    setIsWriting(true);
+  };
   return (
     <div className="relative w-full px-20">
       {/* Hero Section */}
@@ -73,7 +94,8 @@ const HeroContent = () => {
             className="text-lg text-gray-400 my-5 max-w-[600px]"
           >
             Full Stack Software Developer with experience in MERN Stack Web
-            Development. Check out my projects and skills.
+            Development.
+            {displayText}
           </motion.p>
 
           {/* Button */}
@@ -81,7 +103,7 @@ const HeroContent = () => {
             variants={slideInFromLeft(1.75)}
             className="flex mx-auto md:mx-0 gap-5"
           >
-            <Button1 />
+            <Button1 startWriting={startWriting} />
             <Button2 />
           </motion.div>
         </div>

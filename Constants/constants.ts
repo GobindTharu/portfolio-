@@ -1,5 +1,3 @@
-
-
 export const Socials = [
   {
     name: "Facebook",
@@ -48,7 +46,7 @@ export const Frontend_skill = [
     width: 80,
     height: 80,
   },
-  
+
   {
     skill_name: "Next js 13",
     Image: "/next.png",
@@ -83,8 +81,6 @@ export const Backend_skill = [
     height: 80,
   },
 ];
-
-
 
 export const Other_skill = [
   {
@@ -145,7 +141,6 @@ export const Testimonials = [
   },
 ];
 
-
 export const sections = [
   { name: "Code", link: "/code" },
   { name: "Plan", link: "/plan" },
@@ -153,7 +148,6 @@ export const sections = [
   { name: "Automate", link: "/automate" },
   { name: "Secure", link: "/secure" },
 ];
-
 
 export const data = [
   "Apple",
@@ -259,4 +253,19 @@ export const data = [
   "Xanadu Fruit",
   "Yellow Dragonfruit",
   "Zamboni Fruit",
+];
+
+export const letterText = `Passionate about building scalable and user-friendly web applications using modern technologies. Experienced in developing MERN stack applications, crafting responsive Next.js projects with Tailwind CSS, and implementing intuitive UI components using Material UI. Proficient in authentication, database management, and optimizing performance for seamless user experiences.  Check out my projects and skills.`;
+
+export const words = [
+  "apple",
+  "banana",
+  "cherry",
+  "date",
+  "elderberry",
+  "fig",
+  "grape",
+  "honeydew",
+  "kiwi",
+  "lemon",
 ];
