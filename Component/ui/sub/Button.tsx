@@ -20,7 +20,7 @@ export const Button1: React.FC<{ startWriting: () => void }> = ({
 export const Button2: React.FC = ({
 }) => {
     const handleDownload = async () => {
-      const imageUrl = "/downloadedImage.png";
+      const imageUrl = "/PortfolioImage.png";
       const response = await fetch(imageUrl);
       const blob = await response.blob();
       const url = URL.createObjectURL(blob);
