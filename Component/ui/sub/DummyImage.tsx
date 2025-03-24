@@ -5,7 +5,7 @@ import { Button } from "@mui/material";
 
 const DummyImageDownloader: React.FC = () => {
   const handleDownload = async () => {
-    const imageUrl = "/downloadedimage.png"; 
+    const imageUrl = "/downloadedImage.png"; 
     const response = await fetch(imageUrl);
     const blob = await response.blob();
     const url = URL.createObjectURL(blob);
@@ -22,7 +22,7 @@ const DummyImageDownloader: React.FC = () => {
   return (
     <div className="flex flex-col items-center gap-5 mx-12 sm:mx-4">
       <img
-        src="/downloadedimage.png"
+        src="/downloadedImage.png"
         alt="resume"
         className="rounded-md shadow-lg shadow-indigo-500/100 "
       />
