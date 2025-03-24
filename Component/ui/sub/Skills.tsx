@@ -35,7 +35,7 @@ export const Skills: React.FC = () => {
             key={index}
             className="flex flex-col items-center bg-gray-900 p-5 rounded-xl shadow-lg transition-transform hover:scale-105"
           >
-            <Card className="w-full h-50 rounded-lg overflow-hidden shadow-md">
+            <Card className="w-full h-26 md:h-40 lg:h-50 rounded-lg overflow-hidden shadow-md">
               <Image
                 src={item.Image}
                 width={200}
@@ -71,7 +71,7 @@ export const Skills: React.FC = () => {
             key={index}
             className="flex flex-col items-center bg-gray-900 p-5 rounded-xl shadow-lg transition-transform hover:scale-105"
           >
-            <Card className="w-full h-50 rounded-lg overflow-hidden shadow-md">
+            <Card className="w-full h-26 md:h-40 lg:h-50 rounded-lg overflow-hidden shadow-md">
               <Image
                 src={item.Image}
                 width={200}
@@ -106,7 +106,7 @@ export const Skills: React.FC = () => {
             key={index}
             className="flex flex-col items-center bg-gray-900 p-5 rounded-xl shadow-lg transition-transform hover:scale-105"
           >
-            <Card className="w-full h-50 rounded-lg overflow-hidden shadow-md">
+            <Card className="w-full h-26 md:h-40 lg:h-50rounded-lg overflow-hidden shadow-md">
               <Image
                 src={item.Image}
                 width={200}
