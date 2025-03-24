@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-6 md:px-10 sm:px-8 lg:px-16">
+    <nav className="w-full h-[80px] fixed top-0 shadow-lg shadow-[#2A0E61]/100 bg-[#03001417]/500 backdrop-blur-md z-50 px-6 md:px-10 m-4">
       <div className="w-full h-full flex flex-row items-center justify-between m-auto">
         {/* Logo */}
         <a href="#about-me" className="flex items-center">
@@ -48,12 +48,12 @@ const Navbar = () => {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="lg:hidden text-gray-300"
+            className="lg:hidden text-gray-300 pr-4"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
-        </div>
+        </div> 
       </div>
 
       {/* Mobile Menu */}

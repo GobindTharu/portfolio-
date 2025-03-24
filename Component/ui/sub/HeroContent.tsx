@@ -32,12 +32,12 @@ const HeroContent: React.FC<{ displayText: string }> = () => {
     setIsWriting(true);
   };
   return (
-    <div className="relative w-full px-20">
+    <div className="relative w-full px-16 py-16">
       {/* Hero Section */}
       <motion.div
         initial="hidden"
         animate="visible"
-        className=" flex flex-col  md:flex-row items-center justify-start mt-22 sm:mt-7 md:mt-12 lg:mt-16 w-full z-[20] gap-6 sm:gap-3 md:gap-5 lg:gap-10"
+        className="flex flex-col  md:flex-row items-center justify-start mt-22 sm:mt-7 md:mt-12 lg:mt-16 w-full z-[20] gap-6 sm:gap-3 md:gap-5 lg:gap-10"
       >
         {/* Left Section */}
         <div className="flex flex-col ml-2 sm:ml-0 md:ml-0 lg:ml-32 justify-center gap-2 sm:gap-5 md:gap-4 text-start md:text-left sm:text-left w-full">

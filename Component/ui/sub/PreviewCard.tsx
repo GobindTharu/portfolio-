@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { HoverRating } from "./Rating";
+import { Link } from "@mui/material";
 
 export const PreviewCard: React.FC = () => {
   return (
@@ -34,12 +35,14 @@ export const PreviewCard: React.FC = () => {
         </div>
       </div>
       <HoverRating />
-      <button className="relative flex h-12 sm:h-12 w-full max-w-[300px] sm:max-w-[340px] md:max-w-[460px] overflow-hidden rounded-lg p-[3px] focus:outline-none hover:mx-20 mt-2 ">
-        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-5 sm:px-7 text-xs sm:text-sm font-medium text-white backdrop-blur-3xl uppercase">
-          Live Preview
-        </span>
-      </button>
+      <Link href={"/"}>
+        <button className="relative flex h-12 sm:h-12 w-full max-w-[300px] sm:max-w-[340px] md:max-w-[460px] overflow-hidden rounded-lg p-[3px] focus:outline-none transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 ">
+          <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+          <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-5 sm:px-7 text-xs sm:text-sm font-medium text-white backdrop-blur-3xl uppercase">
+            Live Preview
+          </span>
+        </button>
+      </Link>
     </>
   );
 };
