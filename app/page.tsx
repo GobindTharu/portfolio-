@@ -4,7 +4,7 @@ import Navbar from "@/Component/ui/main/Navbar";
 export default function Home() {
   return (
     <main className="h-full w-auto overflow-x-hidden">
-      <div className="flex flex-col">
+      <div className="flex flex-col px-2">
         <Navbar />
         <Hero />
         <Footer />
