@@ -25,7 +25,7 @@ const SearchBar: React.FC = () => {
 
   const handleClickSearchIcon = () => {
     toast.success("Search successful!");
-    router.push("/target-page");
+    router.push("/searched");
   };
 
   return (

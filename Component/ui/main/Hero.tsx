@@ -5,6 +5,7 @@ import GetInTouch from "@/Component/ui/sub/GetInTouch";
 import { Testimonial } from "@/Component/ui/sub/Testimonials";
 import { Skill } from "@/Component/ui/main/Skill";
 import Encryption from "../sub/Encryption";
+import DummyImageDownloader from "@/Component/ui/sub/DummyImage";
 
 const Hero = () => {
   return (
@@ -14,6 +15,7 @@ const Hero = () => {
       <ProjectView />
       <Testimonial />
       <Encryption />
+      <DummyImageDownloader/>
       <GetInTouch />
     </>
   );
