@@ -3,7 +3,7 @@ import React from "react";
 import { Download } from "lucide-react";
 import { Button } from "@mui/material";
 
-const DummyImageDownloader: React.FC = () => {
+const Portfolio: React.FC = () => {
   const handleDownload = async () => {
     const imageUrl = "/PortfolioImage.png"; 
     const response = await fetch(imageUrl);
@@ -37,4 +37,4 @@ const DummyImageDownloader: React.FC = () => {
   );
 };
 
-export default DummyImageDownloader;
+export default Portfolio;

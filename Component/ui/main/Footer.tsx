@@ -21,10 +21,10 @@ interface SocialLink {
 const socialLinks: SocialLink[] = [
   { href: "https://www.facebook.com/balgobind422", Icon: Facebook },
   { href: "https://www.linkedin.com/in/balgobind422/", Icon: Linkedin },
-  { href: "#", Icon: Instagram },
-  { href: "#", Icon: Github },
-  { href: "#", Icon: Twitter },
-  { href: "#", Icon: Youtube },
+  { href: "https://www.instagram.com/balgobind422/", Icon: Instagram },
+  { href: "https://github.com/GobindTharu", Icon: Github },
+  { href: "https://x.com/", Icon: Twitter },
+  { href: "https://www.youtube.com/", Icon: Youtube },
 ];
 
 export  const Footer: React.FC = () => {

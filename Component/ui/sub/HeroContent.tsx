@@ -10,6 +10,7 @@ import { SparklesIcon } from "@heroicons/react/16/solid";
 import { Button1, Button2 } from "./Button";
 import { HeroCard } from "./HeroCard";
 import { letterText } from "@/Constants/constants";
+import Notice from "@/Component/ui/sub/Notice";
 
 const HeroContent: React.FC<{ displayText: string }> = () => {
   const [displayText, setDisplayText] = useState("");
@@ -33,6 +34,7 @@ const HeroContent: React.FC<{ displayText: string }> = () => {
   };
   return (
     <div className="relative w-full px-16 py-16">
+      <Notice/>
       {/* Hero Section */}
       <motion.div
         initial="hidden"
