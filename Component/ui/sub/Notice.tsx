@@ -15,9 +15,9 @@ export default function Notice() {
   }, []);
 
   return (
-    <div className="fixed w-full h-screen flex items-center justify-center z-100">
+    <div className="absolute w-full h-screen flex items-center justify-center z-100">
       <div
-        className={`fixed inset-0 transition-all ${showPopup ? "backdrop-blur-md" : ""}`}
+        className={`absolute inset-0 transition-all ${showPopup ? "backdrop-blur-md" : ""}`}
       />
 
 
