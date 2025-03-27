@@ -15,7 +15,7 @@ export default function Notice() {
   }, []);
 
   return (
-    <div className="absolute w-full h-screen flex items-center justify-center z-100">
+    <div className="absolute w-full h-full flex items-center justify-center z-100">
       <div
         className={`absolute inset-0 transition-all ${showPopup ? "backdrop-blur-md" : ""}`}
       />
@@ -27,7 +27,7 @@ export default function Notice() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.8 }}
-          className="absolute z-50 bg-white shadow-lg rounded-xl m-16 md:12 text-center flex flex-col items-center w-full max-w-3xl h-50 p-16 md:32"
+          className="fixed z-50 bg-gray-200 shadow-lg rounded-xl text-center flex flex-col items-center w-full md:max-w-7xl h-50"
         >
           <h2 className="text-lg font-semibold">Notice</h2>
           <p className="text-gray-600">

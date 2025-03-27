@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-import SearchComponent from "../sub/Search";
+import SearchComponent from "./Search";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
