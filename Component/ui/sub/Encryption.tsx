@@ -10,7 +10,7 @@ const Encryption = () => {
       <div className="absolute w-auto h-auto top-7 md:top-12 z-[5] px-4 text-center">
         <motion.div
           variants={slideInFromTop(0.2)}
-          className="text-[28px] sm:text-[32px] md:text-[32px] lg:text-[40px] font-medium text-gray-200"
+          className="text-[27px] sm:text-[32px] md:text-[32px] lg:text-[40px] font-medium text-gray-200"
         >
           Performance
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
