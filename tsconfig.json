@@ -36,7 +36,7 @@
     "Component/unused/SwitchMode.tsx",
     "Component/unused/ProjectOverview.jsx",
     "Component/main/sub/DashBord.jsx",
-    "Component/ui/sub/searchBar.tsx",
+    "Component/unusedComponents/searchBar.tsx",
     "Component/ui/sub/GetInTouch.tsx"
   ],
   "exclude": ["node_modules"]

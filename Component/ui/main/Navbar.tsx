@@ -3,7 +3,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-import SearchComponent from "../sub/Search";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +43,6 @@ const Navbar = () => {
           </a>
         </div>
         <div className="flex">
-          <SearchComponent />
 
           {/* Mobile Menu Toggle */}
           <button
