@@ -35,7 +35,6 @@ export const PreviewCard: React.FC = () => {
                 src={item.mobileImageUrl}
                 alt={item.name}
                 layout="fill"
-                objectFit="cover"
                 className="rounded-4xl"
               />
             </div>

@@ -39,7 +39,7 @@ const GetInTouch: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full min-h-screen p-4 bg-opacity-0 z-20 text-white">
       <h1 className="text-3xl font-semibold text-center mb-6">Get in Touch</h1>
-      <div className="flex flex-col lg:flex-row items-center justify-center w-full max-w-6xl gap-10 p-3 bg-gray-800 rounded-lg shadow-lg">
+      <div className="flex flex-col lg:flex-row items-center justify-center w-full max-w-6xl gap-10 p-3 bg-gray-700 rounded-lg shadow-lg">
         {/* Google Map */}
         <div className="w-full lg:w-1/2 h-96 lg:h-[500px] rounded-lg overflow-hidden p-0">
           <Image
