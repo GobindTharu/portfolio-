@@ -5,14 +5,14 @@ import { Button } from "@mui/material";
 
 const Portfolio: React.FC = () => {
   const handleDownload = async () => {
-    const imageUrl = "/PortfolioImage.png"; 
+    const imageUrl = "/balgobind's_resume.jpg"; 
     const response = await fetch(imageUrl);
     const blob = await response.blob();
     const url = URL.createObjectURL(blob);
 
     const a = document.createElement("a");
     a.href = url;
-    a.download = "BalGobind's_Portfolio.png";
+    a.download = "/balgobind's_resume.jpg";
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);

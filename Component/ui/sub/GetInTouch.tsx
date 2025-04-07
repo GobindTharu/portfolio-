@@ -5,6 +5,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { TextField, Button } from "@mui/material";
 import { MdEmail, MdPerson, MdPhone } from "react-icons/md";
+import Image from "next/image";
 
 interface FormData {
   name: string;
@@ -41,13 +42,13 @@ const GetInTouch: React.FC = () => {
       <div className="flex flex-col lg:flex-row items-center justify-center w-full max-w-6xl gap-10 p-3 bg-gray-800 rounded-lg shadow-lg">
         {/* Google Map */}
         <div className="w-full lg:w-1/2 h-96 lg:h-[500px] rounded-lg overflow-hidden p-0">
-          <iframe
-            className="w-full h-full p-0"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.264728034817!2d83.46616727554962!3d27.68180597614348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996f92a0e3fd3cd%3A0x8f22e96f7a73947b!2sImilya%2C%20Lumbini%2032800%2C%20Nepal!5e0!3m2!1sen!2snp!4v1710262877654!5m2!1sen!2snp&zoom=15&scrollwheel=true"
-            allowFullScreen
-            loading="lazy"
-            style={{ border: 0 }}
-          ></iframe>
+          <Image
+            className="w-full h-full p-0 object-cover"
+            src={"/GetInTouch.avif"}
+            alt={"Collaborate"}
+            width={400}
+            height={400}
+          />
         </div>
 
         {/* Contact Form */}
