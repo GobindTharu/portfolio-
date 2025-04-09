@@ -38,7 +38,7 @@ export const Testimonial = () => {
                   </Link>
                   <div className="flex flex-row p-6 bg-opacity-0 rounded-xl">
                     <p className=" text-lg text-gray-200 max-w-[500px] h-auto">
-                      evaluation of the strengths.{" "}
+                      Evaluation of the strengths. of you tech stack{" "}
                     </p>
                   </div>
 
