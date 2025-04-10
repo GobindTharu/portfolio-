@@ -153,6 +153,12 @@ export const letterText = `Passionate about building scalable and user-friendly 
 
 export const PreviewCardList = [
   {
+    name: "b-mandu",
+    imageUrl: "/b-mandu.png",
+    mobileImageUrl: "/b-manduMobile.png",
+    link: "https://b-mandu.balgobindchaudhary.com.np/",
+  },
+  {
     name: "Profile",
     imageUrl: "/desktop.png",
     mobileImageUrl: "/desktopMobile.png",
