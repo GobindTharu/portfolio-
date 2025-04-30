@@ -156,7 +156,7 @@ export const PreviewCardList = [
     name: "b-mandu",
     imageUrl: "/b-mandu.png",
     mobileImageUrl: "/b-manduMobile.png",
-    link: "https://b-mandu.balgobindchaudhary.com.np/",
+    link: "https://bmandu.balgobindchaudhary.com.np/",
   },
   {
     name: "Profile",
