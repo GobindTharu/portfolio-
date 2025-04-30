@@ -18,14 +18,14 @@ export const PreviewCard: React.FC = () => {
             className="relative w-full max-w-7xl md:min-h-0 bg-opacity-0 text-white rounded-lg shadow-lg flex flex-col overflow-hidden p-4 md:p-8 lg:p-12 mb-4 sm:mb-8 md:mb-10"
           >
             {/* Left Image Section - Mobile View Adjustment */}
-            <div className="relative w-full h-full md:w-12 lg:w-250 md:h-auto  md:m-8 border border-gray-500 rounded-3xl shadow-xl shadow-gray-700">
+            <div className="relative w-full h-full md:w-12 lg:w-250 md:h-auto  md:m-8 border border-gray-500 rounded-2xl shadow-xl shadow-gray-700">
               <Image
                 src={item.imageUrl}
                 alt={item.name}
                 layout="responsive"
                 width={1200}
                 height={800}
-                className="rounded-4xl"
+                className="rounded-2xl"
               />
             </div>
 
