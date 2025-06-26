@@ -153,6 +153,12 @@ export const letterText = `Passionate about building scalable and user-friendly 
 
 export const PreviewCardList = [
   {
+    name: "CareerKhoj",
+    imageUrl: "/careerkhoj.png",
+    mobileImageUrl: "/careerkhojMobile.png",
+    link: "https://careerkhoj.balgobindchaudhary.com.np/",
+  },
+  {
     name: "b-mandu",
     imageUrl: "/b-mandu.png",
     mobileImageUrl: "/b-manduMobile.png",
