@@ -12,6 +12,7 @@ import {
   Twitter,
   Youtube,
 } from "lucide-react";
+import { Testimonial } from "../sub/Testimonials";
 
 interface SocialLink {
   href: string;
@@ -27,7 +28,7 @@ const socialLinks: SocialLink[] = [
   { href: "https://www.youtube.com/", Icon: Youtube },
 ];
 
-export  const Footer: React.FC = () => {
+export const Footer: React.FC = () => {
   return (
     <footer className="w-full bg-gray-900 text-gray-300 mt-12">
       <div className="w-full flex flex-col items-center container mx-auto px-6 py-12">
@@ -56,10 +57,17 @@ export  const Footer: React.FC = () => {
               Quick Links
             </h3>
             <ul className="flex flex-col items-center space-y-2">
-              {["Home", "About", "Skill", "Project", "Contact"].map((item) => (
+              {[
+                "Home",
+                "Abouts",
+                "Skills",
+                "Projects",
+                "Testimonials",
+                "Contacts",
+              ].map((item) => (
                 <li key={item}>
                   <Link
-                    href={`/${item.toLowerCase()}`}
+                    href={`/#${item.toLowerCase()}`}
                     className="hover:text-white transition-colors"
                   >
                     {item}
@@ -104,4 +112,4 @@ export  const Footer: React.FC = () => {
       </div>
     </footer>
   );
-}
+};

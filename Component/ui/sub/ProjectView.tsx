@@ -10,7 +10,10 @@ export const ProjectView: React.FC = () => {
   const [selectedSection, setSelectedSection] = useState<string>("Collaborate");
 
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-screen p-6 transition gap-3">
+    <section
+      id="projects"
+      className="relative flex flex-col items-center justify-center min-h-screen p-6 transition gap-3"
+    >
       {/* Project Overview */}
       <PreviewCard />
 
@@ -39,7 +42,11 @@ export const ProjectView: React.FC = () => {
             className="w-full bg-gray-300 text-gray-900"
           >
             {sections.map(({ name, link }) => (
-              <MenuItem key={name} value={name} className="w-full text-gray-100">
+              <MenuItem
+                key={name}
+                value={name}
+                className="w-full text-gray-100"
+              >
                 <Link href={link} className="w-full block">
                   {name}
                 </Link>
@@ -52,9 +59,11 @@ export const ProjectView: React.FC = () => {
           <p className="text-lg text-gray-400">
             Performance and security-based Development Projects workflow
           </p>
-          <p className="text-lg text-gray-400">Content for section coming soon...</p>
+          <p className="text-lg text-gray-400">
+            Content for section coming soon...
+          </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

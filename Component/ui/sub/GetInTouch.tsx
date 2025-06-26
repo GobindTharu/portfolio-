@@ -37,7 +37,10 @@ const GetInTouch: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center w-full min-h-screen p-4 bg-opacity-0 z-20 text-white">
+    <section
+      id="contact"
+      className="flex flex-col items-center justify-center w-full min-h-screen p-4 bg-opacity-0 z-20 text-white"
+    >
       <h1 className="text-3xl font-semibold text-center mb-6">Get in Touch</h1>
       <div className="flex flex-col lg:flex-row items-center justify-center w-full max-w-6xl gap-10 p-3 bg-gray-700 rounded-lg shadow-lg">
         {/* Google Map */}
@@ -92,12 +95,17 @@ const GetInTouch: React.FC = () => {
             />
           </div>
 
-          <Button type="submit" variant="contained" color="primary" className="mt-4">
+          <Button
+            type="submit"
+            variant="contained"
+            color="primary"
+            className="mt-4"
+          >
             Submit
           </Button>
         </form>
       </div>
-    </div>
+    </section>
   );
 };
 

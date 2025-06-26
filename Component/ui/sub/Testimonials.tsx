@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export const Testimonial = () => {
   return (
-    <>
+    <section id="testimonials">
       <h1 className="flex flex-1 justify-center items-center text-gray-200 text-2xl font-bold md:text-4xl lg:text-6xl uppercase py-4 sm:py-4 lg:py- mt-16 sm:mt-1 lg:mt-6">
         Testimonials
       </h1>
@@ -56,6 +56,6 @@ export const Testimonial = () => {
           ))}
         </div>
       </div>
-    </>
+    </section>
   );
 };

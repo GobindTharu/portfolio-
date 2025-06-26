@@ -8,10 +8,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full h-[80px] fixed top-0 shadow-lg shadow-[#2A0E61]/100 bg-[#03001417]/500 backdrop-blur-md z-50 px-6 md:px-10 m-4">
+    <nav className="w-full h-[80px] fixed top-0 shadow-lg shadow-[#2A0E61]/100 bg-[#03001417]/500 backdrop-blur-md z-50 px-6 md:px-10 mx-16  ">
       <div className="w-full h-full flex flex-row items-center justify-between m-auto">
         {/* Logo */}
-        <a href="#about-me" className="flex items-center">
+        <a href="about-me" className="flex items-center">
           <Image
             src="/next.png"
             alt="logo"
@@ -26,7 +26,7 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center gap-6 text-gray-200 text-sm font-medium">
-          <a href="#about-me" className="cursor-pointer uppercase">
+          <a href="#about" className="cursor-pointer uppercase">
             About
           </a>
           <a href="#skills" className="cursor-pointer uppercase">
@@ -43,7 +43,6 @@ const Navbar = () => {
           </a>
         </div>
         <div className="flex">
-
           {/* Mobile Menu Toggle */}
           <button
             className="lg:hidden text-gray-300 pr-4"
@@ -58,35 +57,35 @@ const Navbar = () => {
       {isOpen && (
         <div className="lg:hidden absolute top-[65px] right-0 w-[60vw]  h-[80vh] bg-[#030014] backdrop-blur-md shadow-md flex flex-col items-center py-12 space-y-4 text-gray-200 text-sm font-medium ">
           <a
-            href="#about-me"
+            href="about-me"
             className="flex flex-col items-center w-100 cursor-pointer uppercase  py-4 hover:tracking-widest hover:bg-[#878788]"
             onClick={() => setIsOpen(false)}
           >
             About
           </a>
           <a
-            href="#skills"
+            href="skills"
             className="flex flex-col items-center w-100 cursor-pointer uppercase  py-4  hover:tracking-widest hover:bg-[#878788]"
             onClick={() => setIsOpen(false)}
           >
             Skills
           </a>
           <a
-            href="#projects"
+            href="projects"
             className="flex flex-col items-center w-100 cursor-pointer uppercase  py-4  hover:tracking-widest hover:bg-[#878788]"
             onClick={() => setIsOpen(false)}
           >
             Projects
           </a>
           <a
-            href="#testimonials"
+            href="testimonials"
             className="flex flex-col items-center w-100 cursor-pointer uppercase  py-4  hover:tracking-widest hover:bg-[#878788]"
             onClick={() => setIsOpen(false)}
           >
             Testimonials
           </a>
           <a
-            href="#contact"
+            href="contact"
             className="flex flex-col items-center w-100 cursor-pointer uppercase  py-4  hover:tracking-widest hover:bg-[#878788]"
             onClick={() => setIsOpen(false)}
           >
